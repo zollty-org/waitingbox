@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test</title>
+
+<!-- 引入zt-request -->
+<script type="text/javascript" src="../resources/base/js/waitingbox.js"></script>
+
+</head>
+<body>
+<textarea id='result' rows="10" cols="100"></textarea>
+
+<script type="text/javascript">
+
+waitingbox.init();
+
+waitingbox.show();
+
+setTimeout(waitingbox.hide, 3000);
+
+setTimeout(waitingbox.show, 5000);
+
+setTimeout(waitingbox.hide, 8000);
+
+</script>
+</body>
+</html>
