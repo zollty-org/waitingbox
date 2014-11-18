@@ -12,7 +12,7 @@
 var waitingbox = typeof module === 'undefined' ? (window.waitingbox = window.waitingbox || {}) : module.exports;
 
 
-var wb_div, isInit = false;
+var wb_div, isInit = false, alertText = "正在处理中，请稍等 ..."; // Processing, please wait...
 
 /**
  * @param [String] 开关，如果设置为true，则会在文档加载时自动调用waiting box
@@ -23,7 +23,6 @@ function init(isWaitOnInit) {
 		var newElement = document.createElement("div");
 		newElement.setAttribute("id", "waitingbox");  
 		newElement.setAttribute("style", "width:200px; height:60px; position:absolute; z-index:99; left:50%; top:50%; margin:-30px 0 0 -100px; border: 2px solid #CCE8CF; display:none;line-height: 60px; vertical-align: middle; text-align:center; z-index:100; font-size:12px; background-color:#F1FEDD; font-family:'微软雅黑';filter: alpha(opacity = 70);opacity: 0.7;");  
-		var alertText = "正在处理中，请稍等 ..."; // Waiting processing please...
 		var newElementHtmlContent = document.createTextNode(alertText);
 		var bodyElement = document.getElementsByTagName('body')[0];
 		bodyElement.appendChild(newElement);
@@ -47,7 +46,7 @@ function init(isWaitOnInit) {
 }
 
 function zoutyMouseHandle(event) {
-	alert("处理未完成，请稍等 ...");
+	alert(alertText);
 	event.cancelBubble = true;
 }
 function zoutyBlockMouseEvent() {
@@ -80,7 +79,7 @@ function showWBox() {
 	wb_div.style.display = "";
 }
 
-
+waitingbox.alertText = alertText;
 waitingbox.init = init;
 waitingbox.hide = hideWBox;
 waitingbox.show = showWBox;
