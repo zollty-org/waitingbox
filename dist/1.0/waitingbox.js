@@ -1,4 +1,4 @@
-/*!WaitingBox.js - https://github.com/zollty-org/waitingbox/*/
+/*!waitingbox.js 1.0 - https://github.com/zollty-org/waitingbox/*/
 !function(e){function t(t){if(!u){var n=document.createElement("div")
 n.setAttribute("id","waitingbox"),n.setAttribute("style","width:200px; height:60px; position:absolute; z-index:99; left:50%; top:50%; margin:-30px 0 0 -100px; border: 2px solid #CCE8CF; display:none;line-height: 60px; vertical-align: middle; text-align:center; z-index:100; font-size:12px; background-color:#F1FEDD; font-family:'??????';filter: alpha(opacity = 70);opacity: 0.7;")
 var o=document.createTextNode(r),d=document.getElementsByTagName("body")[0]
