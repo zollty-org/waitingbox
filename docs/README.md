@@ -13,7 +13,7 @@ A simple tool for waiting for page processing.
 	  });
 
 
-[See Examples](https://github.com/zollty-org/waitingbox/tree/master/examples/waitingbox-test.html)
+[See Examples](http://zollty-org.github.io/waitingbox/examples/waitingbox-test.html)
 
 ##	Download
 
