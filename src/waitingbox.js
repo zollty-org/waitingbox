@@ -22,7 +22,7 @@ function init(isWaitOnInit) {
 	if(!isInit) {
 		var newElement = document.createElement("div");
 		newElement.setAttribute("id", "waitingbox");  
-		newElement.setAttribute("style", "width:200px; height:60px; position:absolute; z-index:99; left:50%; top:50%; margin:-30px 0 0 -100px; border: 2px solid #CCE8CF; display:none;line-height: 60px; vertical-align: middle; text-align:center; z-index:100; font-size:12px; background-color:#F1FEDD; font-family:'微软雅黑';filter: alpha(opacity = 70);opacity: 0.7;");  
+		newElement.setAttribute("style", "width:200px; height:60px; position:absolute; z-index:99; left:50%; top:50%; margin:-30px 0 0 -100px; border: 2px solid #CCE8CF; display:none;line-height: 60px; vertical-align: middle; text-align:center; z-index:100; font-size:12px; background-color:#F1FEDD; font-family:'Microsoft Yahei','Helvetica Neue',Helvetica,Arial,sans-serif; filter:alpha(opacity = 70); opacity: 0.7;");  
 		var newElementHtmlContent = document.createTextNode(alertText);
 		var bodyElement = document.getElementsByTagName('body')[0];
 		bodyElement.appendChild(newElement);
